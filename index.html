@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário na Floresta Noturna</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('data:image/jpeg;base64,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' ) center/cover no-repeat; /* Substitua 'forest-night.jpg'
+  }
+
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+
+  .form-container h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form-group button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .form-group button:hover {
+    background-color: #219d54;
+  }
+</style>
+</head>
+<body>
+<div class="form-container">
+  <h2>Formulário na Floresta Noturna</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
